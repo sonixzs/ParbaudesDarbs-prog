@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Admins - HipHopFest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="static/admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+  <!-- virsraksts -->
+  <div class="black-bar text-center">
+    <h1>Admina panelis</h1>
+  </div>
+
+  <!-- Solo reģistrācija -->
+  <div class="container my-5 text-center">
+    <h2>Solo Reģistrācija</h2>
+    <table class="table table-bordered table-striped table-hover mx-auto w-90">
+      <thead class="table-dark">
+        <tr>
+          <th>Dalībnieka Vārds</th>
+          <th>Dzimšanas Gads</th>
+          <th>Kategorija</th>
+          <th>Darbības</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in solos %}
+        <tr>
+          <form method="post" action="{{ url_for('update_solo', id=s['id']) }}">
+            <td><input type="text" name="name" value="{{ s['name'] }}" class="form-control"></td>
+            <td><input type="text" name="birth_year" value="{{ s['birth_year'] }}" class="form-control"></td>
+            <td><input type="text" name="category" value="{{ s['category'] }}" class="form-control"></td>
+            <td class="d-flex justify-content-center gap-2">
+              <button type="submit" class="btn btn-sag btn-sm">Saglabāt</button>
+          </form>
+          <form method="get" action="{{ url_for('delete_solo', id=s['id']) }}">
+              <button type="submit" class="btn btn-dz btn-sm">Dzēst</button>
+          </form>
+            </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- Komandu reģistrācija -->
+    <h2 class="mt-5">Komandu Reģistrācija</h2>
+    <table class="table table-bordered table-striped table-hover mx-auto w-90">
+      <thead class="table-dark">
+        <tr>
+          <th>Komandas Nosaukums</th>
+          <th>Kapteinis</th>
+          <th>Kategorija</th>
+          <th>Darbības</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for t in teams %}
+        <tr>
+          <form method="post" action="{{ url_for('update_team', id=t['id']) }}">
+            <td><input type="text" name="team_name" value="{{ t['team_name'] }}" class="form-control"></td>
+            <td><input type="text" name="team_leader" value="{{ t['team_leader'] }}" class="form-control"></td>
+            <td><input type="text" name="team_category" value="{{ t['team_category'] }}" class="form-control"></td>
+            <td class="d-flex justify-content-center gap-2">
+              <button type="submit" class="btn btn-sag btn-sm">Saglabāt</button>
+          </form>
+          <form method="get" action="{{ url_for('delete_team', id=t['id']) }}">
+              <button type="submit" class="btn btn-dz btn-sm">Dzēst</button>
+          </form>
+            </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+    <!-- Iziet poga -->
+    <div class="text-center mt-4">
+      <a href="{{ url_for('logout') }}" class="btn btn-iz">Iziet</a>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
