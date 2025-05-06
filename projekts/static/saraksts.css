@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Goldman", sans-serif;
+}
+
+.wrapper {
+    min-height: calc(100vh - 100px); 
+    background: #ccc;
+  }
+
+  .wrapper2 {
+    min-height: calc(100vh - 100px); 
+    background: #ccc;
+  }
+
+
+/* header-pogas */
+.nav {
+    font-family: "Goldman", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+    background: white;
+}
+
+.nav-left {
+    margin-right: auto;
+  }
+
+.nav a {
+    font-size: 25px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: fuchsia;
+  }
+  
+
+/* attels */
+.header-image img {
+    display: block;
+    margin: auto;
+  }
+  
+
+/* virsraksts */
+  .black-bar {
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .black-bar h1 {
+    font-family: "Goldman", sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+
+
+
+
+
+  /* tabula ar sarakstu */
+
+.container h2 {
+  font-family: "Goldman", sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+table {
+  font-size: 25px;
+  font-family: "Goldman", sans-serif;
+  background-color: white;
+}
+
+thead th {
+  background-color: #878787 !important;
+  color: white;
+}
+
+  /* footer */
+.footer {
+    background-color: #f5a700; 
+    padding: 30px 50px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .social-icons a {
+    margin-left: 15px;
+  }
+  
+ .social-icons a svg {
+    width: 30px;
+    height: 30px;
+  }
+  

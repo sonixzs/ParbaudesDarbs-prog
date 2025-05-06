@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.wrapper {
+  min-height: calc(100vh - 100px); 
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('hiphop.jpg') no-repeat center center/cover;
+}
+
+/* header-pogas */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em;
+  background: white;
+}
+
+.nav a {
+  font-size: 25px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.nav a:hover {
+  color: fuchsia;
+}
+
+
+/* ievades kaste priekš parolei */
+  .admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .admin-box {
+    background-color: #f8f5f5;
+    padding: 50px 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-box h1 {
+    font-size: 28px;
+  }
+  
+  .subtext {
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  .admin-box input[type="password"] {
+    width: 80%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1e2e2;
+    box-shadow: 5px 5px 10px #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* poga ieiet */
+  .admin-box input[type="submit"] {
+    background-color: fuchsia;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .admin-box input[type="submit"]:hover {
+    background-color: rgb(172, 9, 109);
+    
+  }
+
+
+/* footer */
+  .footer {
+    background-color: #f5a700; 
+    padding: 30px 50px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .social-icons a {
+    margin-left: 15px;
+  }
+  
+ .social-icons a svg {
+    width: 30px;
+    height: 30px;
+  }
+  

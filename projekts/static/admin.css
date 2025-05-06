@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Goldman", sans-serif;
+    background-color: #ccc !important;
+  }
+  
+
+  
+  /* virsraksts */
+    .black-bar {
+      background-color: black;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    .black-bar h1 {
+      font-family: "Goldman", sans-serif;
+      color: white;
+      font-size: 60px;
+      font-weight: 500;
+      font-style: normal;
+      margin: 0;
+      letter-spacing: 3px;
+    }
+
+  
+    /* tabula ar sarakstu */
+  
+  .container h2 {
+    font-family: "Goldman", sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  table {
+    font-size: 25px;
+    font-family: "Goldman", sans-serif;
+    background-color: white;
+  }
+  
+  thead th {
+    background-color: #878787 !important;
+    color: white;
+  }
+
+
+
+  /* Poga Saglabāt*/
+button.btn-sag {
+    background-color: #a2e1a4; 
+    color: white;
+  }
+  
+  button.btn-sag:hover {
+    background-color: #88a78c;
+    color: white;
+  }
+
+
+  
+  /* Poga Dzēst */
+  button.btn-dz {
+    background-color: #e36c78; 
+    color: white;
+  }
+  
+  button.btn-dz:hover {
+    background-color: #b35c65;
+    color: white;
+  }
+  
+  /* Poga Iziet */
+  a.btn-iz {
+    background-color: fuchsia; 
+    color: white;
+    padding: 1em;
+    width: 10%;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    font-family: "Goldman", sans-serif;
+    font-size: 17px;
+  }
+  
+  a.btn-iz:hover {
+    background-color: rgb(180, 0, 180);
+    color: white;
+  }
+
+  
+
